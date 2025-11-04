@@ -1,0 +1,84 @@
+.card {
+    border: 1px solid rgba(2,6,23,0.06);
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+    border-radius: 10px;
+    overflow: hidden;
+    background: #ffffff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.media {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8fafc;
+    overflow: hidden;
+    position: relative; 
+}
+
+.productImage {
+    object-fit: contain;
+}
+
+.placeholder {
+    color: #94a3b8;
+    font-size: 14px;
+    padding: 12px;
+}
+
+.content {
+    padding: 12px;
+    flex: 1;
+}
+
+.actions {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    gap: 6px;
+    z-index: 2;
+}
+
+.iconButton {
+    background: rgba(255,255,255,0.3);
+    border: 1px solid rgba(2,6,23,0.06);
+    padding: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #475569;
+}
+
+.iconButton:hover {
+    background: #c3bcbc;
+}
+
+.liked {
+    color: #e11d48;
+    border-color: rgba(225,29,72,0.15);
+    box-shadow: 0 1px 0 rgba(225,29,72,0.04) inset;
+}
+
+.title {
+    margin: 0 0 6px 0;
+    color: #0f172a;
+    font-size: 16px;
+}
+
+.description {
+    margin: 0;
+    color: #334155;
+    font-size: 13px;
+    overflow: hidden;
+    display: -webkit-box;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
