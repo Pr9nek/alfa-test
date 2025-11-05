@@ -3,13 +3,14 @@
 import Image from "next/image";
 import { useProductsStore } from "../store/useProductsStore";
 import styles from "../styles/ProductDetail.module.css";
-import Link from "next/link"; // Добавляем Link для кнопки назад
+import Link from "next/link"; 
+import ProductNotFound from "./ProductNotFound";
 
 export default function ProductDisplay({ productId }: { productId: string }) {
 const product = useProductsStore((s) => s.getById(productId));
 
 if (!product) {
-return <div>Product not found</div>;
+return <ProductNotFound />;
 }
 
 const imageUrl = product.image as string | null | undefined;
