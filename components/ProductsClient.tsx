@@ -60,8 +60,7 @@ const filtered = showFavorites
 ? baseFiltered.filter((p) => !!likes[String(p.id)])
 : baseFiltered;
 
-const totalPages = getTotalPages();
-// const totalPages = Math.max(1, Math.ceil(filtered.length / pageSize));
+const totalPages = Math.max(1, Math.ceil(filtered.length / pageSize));
 
 useEffect(() => {
 if (currentPage > totalPages) setPage(totalPages);
