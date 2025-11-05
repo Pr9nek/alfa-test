@@ -36,4 +36,4 @@ export default async function ProductsPage() {
 
     // Передаем загруженные данные клиентскому компоненту
     return <ProductsClient initialProducts={initialProducts} />;  
-  }
+}
